@@ -1,0 +1,71 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CN, ST=GD, L=Guangzhou, O=openvpn-2.0, CN=openvpn-2.0 CA/emailAddress=125653081@qq.com
+        Validity
+            Not Before: Nov 21 10:17:16 2011 GMT
+            Not After : Nov 18 10:17:16 2021 GMT
+        Subject: C=CN, ST=GD, L=Guangzhou, O=openvpn-2.0, CN=client/name=feirui/emailAddress=125653081@qq.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:c9:7f:42:7a:b4:d5:b1:7f:f9:69:ec:d4:b2:5f:
+                    f8:fb:f8:2b:67:f3:46:a8:9f:49:ba:fe:26:77:2a:
+                    3e:8b:a2:4f:44:da:a3:ab:bc:c5:4e:4d:d6:b6:2a:
+                    1f:53:9b:9c:73:bd:72:fc:0c:15:0c:4d:11:64:0d:
+                    d2:77:47:7f:85:79:8d:1d:b3:07:a3:d0:24:fe:a7:
+                    c6:b6:2e:b1:0a:40:0e:40:78:85:73:b7:30:5e:27:
+                    9b:4f:92:21:a2:ce:da:bd:fd:88:2d:e7:3c:6d:90:
+                    6f:dd:ae:10:a5:21:e5:a3:05:3e:90:bf:68:ff:9f:
+                    3d:f9:74:6a:64:ec:eb:8a:d7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                E1:15:BE:5C:7D:88:E2:FE:BA:71:76:40:68:99:E7:E0:D0:1D:3A:22
+            X509v3 Authority Key Identifier: 
+                keyid:F2:A9:D8:FC:7E:A6:16:6F:41:6D:35:67:BA:40:9E:40:D4:61:34:30
+                DirName:/C=CN/ST=GD/L=Guangzhou/O=openvpn-2.0/CN=openvpn-2.0 CA/emailAddress=125653081@qq.com
+                serial:87:2A:98:34:AB:25:8F:5C
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        8d:2a:e4:d3:1a:ea:c6:43:27:cf:da:e8:96:c4:84:41:ac:33:
+        d7:2a:2b:be:8f:51:2e:dd:d4:26:6f:59:22:2e:49:e5:5a:0d:
+        dc:26:ef:6d:0a:f6:f2:c9:71:41:87:00:c6:9a:8c:9b:8a:2f:
+        a6:cc:69:0f:7b:a8:ae:d9:16:9e:78:92:f2:c7:7c:94:6f:ae:
+        9b:60:1c:8d:42:fd:58:95:15:cc:0e:8e:0e:53:23:8e:3a:63:
+        a4:e9:29:b1:01:90:a9:80:5a:8e:3a:a1:e5:39:06:de:80:70:
+        4b:46:0f:bb:4d:bf:1c:ea:52:26:72:2e:4b:96:a4:10:55:b2:
+        f1:f3
+-----BEGIN CERTIFICATE-----
+MIIDsjCCAxugAwIBAgIBAjANBgkqhkiG9w0BAQUFADB+MQswCQYDVQQGEwJDTjEL
+MAkGA1UECBMCR0QxEjAQBgNVBAcTCUd1YW5nemhvdTEUMBIGA1UEChMLb3BlbnZw
+bi0yLjAxFzAVBgNVBAMTDm9wZW52cG4tMi4wIENBMR8wHQYJKoZIhvcNAQkBFhAx
+MjU2NTMwODFAcXEuY29tMB4XDTExMTEyMTEwMTcxNloXDTIxMTExODEwMTcxNlow
+gYcxCzAJBgNVBAYTAkNOMQswCQYDVQQIEwJHRDESMBAGA1UEBxMJR3Vhbmd6aG91
+MRQwEgYDVQQKEwtvcGVudnBuLTIuMDEPMA0GA1UEAxMGY2xpZW50MQ8wDQYDVQQp
+EwZmZWlydWkxHzAdBgkqhkiG9w0BCQEWEDEyNTY1MzA4MUBxcS5jb20wgZ8wDQYJ
+KoZIhvcNAQEBBQADgY0AMIGJAoGBAMl/Qnq01bF/+Wns1LJf+Pv4K2fzRqifSbr+
+JncqPouiT0Tao6u8xU5N1rYqH1ObnHO9cvwMFQxNEWQN0ndHf4V5jR2zB6PQJP6n
+xrYusQpADkB4hXO3MF4nm0+SIaLO2r39iC3nPG2Qb92uEKUh5aMFPpC/aP+fPfl0
+amTs64rXAgMBAAGjggE0MIIBMDAJBgNVHRMEAjAAMC0GCWCGSAGG+EIBDQQgFh5F
+YXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFOEVvlx9iOL+
+unF2QGiZ5+DQHToiMIGyBgNVHSMEgaowgaeAFPKp2Px+phZvQW01Z7pAnkDUYTQw
+oYGDpIGAMH4xCzAJBgNVBAYTAkNOMQswCQYDVQQIEwJHRDESMBAGA1UEBxMJR3Vh
+bmd6aG91MRQwEgYDVQQKEwtvcGVudnBuLTIuMDEXMBUGA1UEAxMOb3BlbnZwbi0y
+LjAgQ0ExHzAdBgkqhkiG9w0BCQEWEDEyNTY1MzA4MUBxcS5jb22CCQCHKpg0qyWP
+XDATBgNVHSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEF
+BQADgYEAjSrk0xrqxkMnz9rolsSEQawz1yorvo9RLt3UJm9ZIi5J5VoN3CbvbQr2
+8slxQYcAxpqMm4ovpsxpD3uortkWnniS8sd8lG+um2AcjUL9WJUVzA6ODlMjjjpj
+pOkpsQGQqYBajjqh5TkG3oBwS0YPu02/HOpSJnIuS5akEFWy8fM=
+-----END CERTIFICATE-----

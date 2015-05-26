@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="292*168" caption="0,0,0,38" roundcorner="4,4">
+  <Default name="Button" value="height=&quot;30&quot; width=&quot;84&quot; normalimage=&quot;file='button_white.png' source='0,0,8,32' corner='3,3,3,3'&quot; hotimage=&quot;file='button_white.png' source='8,0,16,32' corner='3,3,3,3'&quot; pushedimage=&quot;file='button_white.png' source='16,0,24,32' corner='3,3,3,3'&quot;" />
+  <Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+  <VerticalLayout bkimage="file='提示框.png' corner='1,38,1,1'" inset="1,1,1,1" bordersize="1" bordercolor="#ffcccccc">
+    <HorizontalLayout height="80">
+      <Label name="tip" textpadding="10" textcolor="#00000000" height="30" width="260" padding="20,50,0,30"/>
+    </HorizontalLayout>
+    <HorizontalLayout>
+        <Control />
+        <Button text="是" name="Yes" align="center" width="60" height="30" padding="0,30,10,0"/>
+        <Control />
+      <Control />
+        <Button name="No" text="否" align="center" width="60" height="30" padding="10,30,10,0"/>
+      <Control />
+      </HorizontalLayout>
+  </VerticalLayout>
+</Window>

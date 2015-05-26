@@ -1,0 +1,41 @@
+﻿<Window size="360,260" caption="0,0,0,100" roundcorner="4,4,4,4">
+<Font name="新宋体"  size="12" bold="false" default="true" />
+<Font name="新宋体" size="14" bold="true" />
+<Default name="VScrollBar" value="thumbnormalimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scroll.png' corner='3,3,3,3'&quot;" />
+<Default name="CheckBox" value="normalimage=&quot;file='login_check.png' source='0,0,13,13' dest='0,0,13,13'&quot; hotimage=&quot;file='login_check.png' source='13,0,26,13' dest='0,0,13,13'&quot; selectedimage=&quot;file='login_check.png' source='26,0,39,13' dest='0,0,13,13'&quot;" />
+<VerticalLayout bkimage="file='login_bk.png' corner='4,4,4,4'" hole="true">
+	<HorizontalLayout height="22">
+		<VerticalLayout width="149" bkimage="file='logo.png' dest='10,11,149,43'">
+		</VerticalLayout>
+		<HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout width="64" inset="0,1,0,0" >
+			<Button name="minbtn" width="30" height="21"  normalimage="file='btn_min.png' source='0,0,30,21'" hotimage="file='btn_min.png' source='0,21,30,42'" pushedimage="file='btn_min.png' source='0,42,30,63'" />
+			<Button name="closebtn"width="30" height="21" normalimage="file='btn_close.png' source='0,0,30,21'" hotimage="file='btn_close.png' source='0,21,30,42'" pushedimage="file='btn_close.png' source='0,42,30,63'"/>
+		</HorizontalLayout>
+	</HorizontalLayout>
+	<Control height="90" />
+	<HorizontalLayout height="25" inset="40,0,80,0" >
+		<Label text="账号：" width="40" />
+		<Edit name="edtaccount" bkimage="file='login_input.png' corner='1,1,1,1'"/>
+	</HorizontalLayout>
+	<Control height="10" />
+  <!--
+	<HorizontalLayout height="25" inset="40,0,20,0" >
+		<Label text="密码：" width="40" />
+		<Edit bkimage="file='login_input.png' corner='1,1,1,1'"/>
+		<Button textcolor="#3f8903" width="60" text="找回密码" />
+	</HorizontalLayout>
+  -->
+	<HorizontalLayout height="30" inset="80,11,20,6" >
+		<!--<CheckBox text="记住密码" width="90"  />-->
+		<Control width="10" />
+		<CheckBox text="自动登录" width="90"  />
+	</HorizontalLayout>
+	<HorizontalLayout height="38" inset="130,6" >
+		<Button width="94" name="login" text="登录" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	</HorizontalLayout>
+	<HorizontalLayout height="22">
+	</HorizontalLayout>
+</VerticalLayout>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window size="360,260" caption="0,0,0,100" roundcorner="4,4,4,4">
+<Font name="新宋体"  size="12" bold="false" default="true" />
+<Font name="新宋体" size="14" bold="true" />
+<Default name="VScrollBar" value="thumbnormalimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scroll.png' corner='3,3,3,3'&quot;" />
+<Default name="CheckBox" value="normalimage=&quot;file='login_check.png' source='0,0,13,13' dest='0,0,13,13'&quot; hotimage=&quot;file='login_check.png' source='13,0,26,13' dest='0,0,13,13'&quot; selectedimage=&quot;file='login_check.png' source='26,0,39,13' dest='0,0,13,13'&quot;" />
+<VerticalLayout bkimage="file='logining_bk.png' corner='4,4,4,4'" hole="true">
+	<HorizontalLayout height="22">
+		<VerticalLayout width="149" bkimage="file='logo.png' dest='10,11,149,43'">
+		</VerticalLayout>
+		<HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout width="64" inset="0,1,0,0" >
+			<Button name="minbtn" width="30" height="21"  normalimage="file='btn_min.png' source='0,0,30,21'" hotimage="file='btn_min.png' source='0,21,30,42'" pushedimage="file='btn_min.png' source='0,42,30,63'" />
+			<Button name="closebtn"width="30" height="21" normalimage="file='btn_close.png' source='0,0,30,21'" hotimage="file='btn_close.png' source='0,21,30,42'" pushedimage="file='btn_close.png' source='0,42,30,63'"/>
+		</HorizontalLayout>
+	</HorizontalLayout>
+	<Control height="200" />
+	<HorizontalLayout height="5" inset="40" >
+		<Progress bkimage="file='logining_progress_bk.png' corner='2,2,2,2'" foreimage="file='logining_progress_fore.png' corner='2,2,2,2'" height="5" width="280" min="0" max="100" value="50"/>
+	</HorizontalLayout>
+	<HorizontalLayout height="20" inset="40" >
+		<Control />
+		<Label textcolor="#999999" text="正在登录..." />
+		<Control />
+	</HorizontalLayout>
+
+
+</VerticalLayout>
+</Window>

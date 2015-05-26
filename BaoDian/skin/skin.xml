@@ -1,0 +1,316 @@
+﻿<Window size="840,600" caption="0,0,0,100" roundcorner="6,6,6,6">
+	<!--font 0 -->
+  <Font name="新宋体"  size="12" bold="false" default="true" />
+	<!--font 1 -->
+  <Font name="宋体" size="14" bold="true" />
+	<!--font 2 -->
+  <Font name="宋体" size="14" />
+	<!--font 3 -->
+  <Font name="新宋体" size="24"/>
+  <!--上传下载速度字体4-->
+  <Font name="幼圆" size="22" bold="true"/>
+  <!--再测一测5-->
+  <Font name="新宋体" size="48" bold="true"/>
+  <!--font 6-->
+ <Font name="新宋体" size="14" bold="true"/>
+  <!--font 7-->
+ <Font name="宋体" size="18" />
+  <!--font 8-->
+ <Font name="宋体" size="12" />  
+  <Default name="VScrollBar" value="thumbnormalimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scroll.png' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scroll.png' corner='3,3,3,3'&quot;" />
+  <Default name="CheckBox" value="normalimage=&quot;file='login_check.png' source='0,0,13,13' dest='0,0,13,13'&quot; hotimage=&quot;file='login_check.png' source='13,0,26,13' dest='0,0,13,13'&quot; selectedimage=&quot;file='login_check.png' source='26,0,39,13' dest='0,0,13,13'&quot;" />
+  <VerticalLayout name="mainfram" bkimage="file='main_bg.png' corner='120,200,400,50'" hole="true">
+    <HorizontalLayout height="22">
+      <VerticalLayout width="149" bkimage="file='logo.png' dest='10,11,149,43'">
+      </VerticalLayout>
+      <HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout width="125" inset="0,1,0,0" >
+        <Button name="helpbtn" width="30" height="21"  normalimage="file='btn_help.png' source='0,0,30,21'" hotimage="file='btn_help.png' source='0,21,30,42'" pushedimage="file='btn_help.png' source='0,42,30,63'"  />
+        <Button name="menubtn" width="30" height="21"  normalimage="file='btn_menu.png' source='0,0,30,21'" hotimage="file='btn_menu.png' source='0,21,30,42'" pushedimage="file='btn_menu.png' source='0,42,30,63'" />
+        <Button name="minbtn" width="30" height="21"  normalimage="file='btn_min.png' source='0,0,30,21'" hotimage="file='btn_min.png' source='0,21,30,42'" pushedimage="file='btn_min.png' source='0,42,30,63'" />
+        <Button name="closebtn" width="30" height="21" normalimage="file='btn_close.png' source='0,0,30,21'" hotimage="file='btn_close.png' source='0,21,30,42'" pushedimage="file='btn_close.png' source='0,42,30,63'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    
+    <HorizontalLayout height="90" inset="10,4,10,4" childpadding="10">
+      <Option font="6" name="tab_1" group="1" selected="true" width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_1.png'" selectedimage="tab_select.png" hotimage="file='tab_select2.png'" text="宽带提速" textpadding="0,50,0,0" />
+      <Option font="6" name="tab_2" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_2.png'" selectedimage="tab_select.png" hotimage="file='tab_select2.png'" text="宽带检测" textpadding="0,50,0,0" />
+ <!--	
+      <Option font="6" name="tab_3" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_3.png'" selectedimage="tab_select.png" text="网速检测" textpadding="0,50,0,0" />
+	-->
+			<Option font="6" name="tab_3" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_3.png'" selectedimage="tab_select.png" hotimage="file='tab_select2.png'" text="高清影院" textpadding="0,50,0,0"  />
+      <Option font="6" name="tab_4" group="1"  width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_net.png'" selectedimage="tab_select.png" text="联通网盘" hotimage="file='tab_select2.png'" textpadding="0,50,0,0" />
+      <Option font="6" name="tab_5" group="1"  width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_5.png'" selectedimage="tab_select.png" text="宽带拨号" hotimage="file='tab_select2.png'" textpadding="0,50,0,0" />
+      <Option font="6" name="tab_6" group="1"  width="79" height="82" textcolor="#ffffffff" foreimage="file='测速.png'" selectedimage="tab_select.png" text="宽带测速" hotimage="file='tab_select2.png'" textpadding="0,50,0,0" />
+      <Option font="6" name="tab_7" group="1"  width="79" height="82" textcolor="#ffffffff" foreimage="file='游戏加速.png'" selectedimage="tab_select.png" text="游戏加速" hotimage="file='tab_select2.png'" textpadding="0,50,0,0" />
+    </HorizontalLayout>
+    
+    <HorizontalLayout>
+	    <TabLayout name="switch" bkcolor="#ffffffff" inset="1,1,1,1" bordercolor="#ff438b09" bordersize="0" padding="6,4,0,4">
+	      <HorizontalLayout name="tab_1_c" >
+		      <VerticalLayout name="left" inset="4,-1,4,0">
+	          <HorizontalLayout name="top_banner" bkimage="file='tab_1_left_top.png' corner='4,4,4,4'" height="34" inset="10">
+	            <Label bkimage="laba.png" width="17" padding="0,8,0,12" />
+	            <Label name="lb_forusercount" showhtml="true" textcolor="#656565" textpadding="6,0,0,0" text="{b}温馨提示：{/b}宽带自助服务提速平台已为 {c #ff3200}---{/c} 位用户提供宽带提速服务" />
+	            <Button width="120" name="uphelper" showhtml="true" textcolor="#3f8903" text="{u}查阅提速体验须知{/}" />
+	          </HorizontalLayout>
+            <HorizontalLayout height="30" padding="0,30,0,0">
+              <Label name="free" font="1" textcolor="#ffff0000" width="600" height="24" text="" float="true" pos="43,10" visible="false"/>
+            </HorizontalLayout>
+	          <HorizontalLayout height="220" padding="0,20,0,0">
+	            <VerticalLayout>
+	              <VerticalLayout name="speedAgo" bkimage="file='tab_1_left_middle.png' dest='20,40,409,232'">
+                  <Label name="resttime" font="1" textcolor="#000000" width="300" height="24" text="" float="true" pos="43,10" />
+                  <Label  font="1" textcolor="#000000" width="300" height="24" text="选择您想达到的网络速度：" float="true" pos="43,35" />
+	                <Label name="selectSpeed" font="1" textcolor="#3f8903" width="30" height="24" text="---" float="true" pos="128,64" />
+	                <!--
+	                <Slider name="speedSlider" float="true" pos="38,105" height="33" width="356" min="0" max="5" step="1" value="-1"  unsel="file='redcolor.png' corner='4,4,4,4'" foreimage="file='tab_1_slider_fore.png' corner='4,4,4,4'"  thumbsize="37,23" thumbimage="file='tab_1_slider_thumb.png' corner='15,4,15,4'" />
+	                -->
+	                <Slider name="speedSlider" float="true" pos="38,105" height="33" width="356" min="0" max="5" step="1" value="-1" foreimage="file='tab_1_slider_fore.png' corner='4,4,4,4'"  thumbsize="37,23" thumbimage="file='tab_1_slider_thumb.png' corner='15,4,15,4'" />
+	                <HorizontalLayout childpadding="25" float="true" pos="21,161" height="14" width="389">
+	                  <Option name="4M"   width="44" height="14" group="2" normalimage="4.png"   selectedimage="4_.png" disabledimage="4.png" />
+	                  <Option name="8M"   width="44" height="14" group="2" normalimage="8.png"   selectedimage="8_.png" disabledimage="8.png"  />
+	                  <Option name="10M"  width="44" height="14" group="2" normalimage="10.png"  selectedimage="10_.png" disabledimage="10.png"  />
+	                  <Option name="20M"  width="44" height="14" group="2" normalimage="20.png"  selectedimage="20_.png" disabledimage="20.png"  />
+	                  <Option name="50M"  width="44" height="14" group="2" normalimage="50.png"  selectedimage="50_.png" disabledimage="50.png"  />
+	                  <Option name="100M" width="44" height="14" group="2" normalimage="100.png" selectedimage="100_.png" disabledimage="100.png"  />
+	                </HorizontalLayout>
+	                <HorizontalLayout childpadding="19" float="true" pos="21,175" height="20" width="395">
+	                  <Label name="4M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                  <Label name="8M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                  <Label name="10M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                  <Label name="20M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                  <Label name="50M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                  <Label name="100M_2" width="50" text="" align="center" textcolor="#ff808080" font="8" />
+	                </HorizontalLayout>
+	              </VerticalLayout>
+	              <VerticalLayout  name="afterSpeed" inset="40,75,0,0"  visible="false" >
+	                <HorizontalLayout height="19">
+	                  <Label name="lblSpdupMsg" text="" font="1" />
+	                </HorizontalLayout>
+	                <HorizontalLayout height="50">
+	                  <Label height="50" text="本月剩余提速时长:" valign="bottom" name="remain" visible="false"/>
+	                  <Label height="50" name="remainTime" valign="bottom" text="---" textcolor="#ff3f8903" font="3" visible="false"/>
+	                 <!-- <Label height="50" width="50" text="" valign="bottom"/> !-->
+	                </HorizontalLayout>
+	                <HorizontalLayout height="10">
+	                  <Progress name="progremain" bkimage ="file='tab_3_progress_bg.png' corner='2,2,2,2'" foreimage="file='tab_3_progress_fore.png' corner='3,3,3,3'" height="10" min="0" max="100" value="0"/>
+	                </HorizontalLayout>
+	                <HorizontalLayout height="20" inset="0,5,0,0">
+	                  <Label text="0"   align="left" textcolor="#ff808080" name="time1" visible="false"/>
+	                  <Label name="lbltotaltime" text="---"  align="right" textcolor="#ff808080" visible="false"/>
+	                </HorizontalLayout>
+	              </VerticalLayout>	
+	            </VerticalLayout>
+              <VerticalLayout width="180" inset="0,35">
+                <GifButton name="oneKeyShoot" gif="onekeyshoot.gif" width="172" height="172" />
+                <ActiveX name="cs_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" height="300" width="300" visible="false" delaycreate="false"></ActiveX>
+              </VerticalLayout>
+	          </HorizontalLayout>
+	          		<!--
+	          <Control bordercolor="#d6d6d6" bordersize="1" height="1" padding="10,0,10,0" />
+	          	!-->
+            <HorizontalLayout inset="30,0,0,0" height="26" padding="0,0,0,0" >
+            </HorizontalLayout>
+	        	<HorizontalLayout inset="30,0,0,0" height="26" padding="0,0,0,0" >
+	          <Label text="您现在的基础带宽为:" textcolor="#ff808080" font="7" width="180"  />
+	          <Label name="curdaikuan" text="---" textcolor="#ffff0000" font="7" width="70" />
+	          <Label text="，您最大可以提速到:" textcolor="#ff808080" font="7" width="180" />
+	          <Label name="maxdaikuan" text="---" textcolor="#ffff0000" font="7" width="70" />
+            </HorizontalLayout>
+            <HorizontalLayout inset="30,0,0,0" height="26" padding="0,0,0,0" >
+            <Label name="nouse" text="您的带宽已足够，当前无需提速" textcolor="#ffff0000" font="7" width="270" visible="false"/>
+            </HorizontalLayout>
+		      </VerticalLayout>
+	      </HorizontalLayout>
+	      <HorizontalLayout name="tab_2_c" >
+	        <VerticalLayout name="left" inset="4,-1,4,0">
+	          <HorizontalLayout name="top" height="100">
+	            <VerticalLayout bkimage="file='tab_2_top_logo.png' dest='20,20,79,84'" inset="100,15">
+	              <!--<Text padding="0,10" font="2" text="宽带检测功能对您当前的网络环境进行检测，如果您的网络异常，将会告知您具体的故障，您可以据此故障进行相应的解决。" />-->
+	            </VerticalLayout>
+              <VerticalLayout bkimage="file='nettest.png'" width="420">
+              </VerticalLayout>
+	            <VerticalLayout width="120" inset="2,30,2,2">
+	              <Button name="startDetect" width="94" height="38" text="开始检测" normalimage="file='login_btn.png' source='0,0,94,32' corner='4,4,4,4'" hotimage="file='login_btn.png' source='94,0,188,32' corner='4,4,4,4'" />
+	            </VerticalLayout>
+	          </HorizontalLayout>
+	          <Control bordercolor="#d6d6d6" bordersize="1" height="1" padding="10,0,10,0" />
+	          <List name="tab_2_list" inset="10,-20,10,0" itemselectedbkcolor="#ffd6d6d6">
+	            <ListContainerElement visible="false" name="nettest_step1" height="60" inset="20,10,10,2">
+	              <HorizontalLayout childpadding="14">
+	                <SuperIcon name="si0" height="16" width="16" errorimage="icon_1.png" successimage="icon_2.png" detectingimage="waiting.gif"/>
+	                <VerticalLayout >
+	                  <Text height="20"  text="检测用户上网方式，pc拨号还是使用路由器拨号" />
+	                  <Text name="nettest_step1_memo" height="20" textcolor="#656565" text="" />
+	                </VerticalLayout>
+	                <Label name="nettest_step1_status" width="200" align="right" text="" />
+	              </HorizontalLayout>
+	            </ListContainerElement>
+	            <ListContainerElement visible="false" name="nettest_step2" height="60" inset="20,10,10,2">
+	              <HorizontalLayout childpadding="14">
+	                <SuperIcon name="si1" height="16" width="16" errorimage="icon_1.png" successimage="icon_2.png" detectingimage="waiting.gif"/>
+	                <VerticalLayout >
+	                  <Text height="20"  text="用户pc端到路由器或modem是否正常" />
+	                  <Text name="nettest_step2_memo" height="20" textcolor="#656565" text="" />
+	                </VerticalLayout>
+	                <Label name="nettest_step2_status" width="200" align="right" text="" />
+	              </HorizontalLayout>
+	            </ListContainerElement>
+	            <ListContainerElement visible="false" name="nettest_step3" height="60" inset="20,10,10,2">
+	              <HorizontalLayout childpadding="14">
+	                <SuperIcon name="si2" height="16" width="16" errorimage="icon_1.png" successimage="icon_2.png" detectingimage="waiting.gif"/>
+	                <VerticalLayout >
+	                  <Text height="20"  text="路由器或modem到互联网是否正常" />
+	                  <Text name="nettest_step3_memo" height="20" textcolor="#656565" text="" />
+	                </VerticalLayout>
+	                <Label name="nettest_step3_status" width="200" align="right" text="" />
+	              </HorizontalLayout>
+	            </ListContainerElement>
+	            <ListContainerElement visible="false" name="nettest_step4" height="60" inset="20,10,10,2">
+	              <HorizontalLayout childpadding="14">
+	                <SuperIcon name="si3" height="16" width="16" errorimage="icon_1.png" successimage="icon_2.png" detectingimage="waiting.gif"/>
+	                <VerticalLayout >
+	                  <Text height="20"  text="打开网页是否正常" />
+	                  <Text name="nettest_step4_memo" height="20" textcolor="#656565" text="" />
+	                </VerticalLayout>
+	                <Label name="nettest_step4_status" width="200" align="right" text="" />
+	              </HorizontalLayout>
+	            </ListContainerElement>
+	          </List>
+	        </VerticalLayout>
+	      </HorizontalLayout>
+	      <HorizontalLayout name="tab_3_c" >
+					<ActiveX name="gq_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+					<!--
+	        <VerticalLayout >
+	          <Speedometer name="meter" padding="80,15" min="0" max="180" value="0" dialOrig="233, 239" PointOrig="233,15" foreimage="zhizhen.png" bkimage="file='yibiao.png' source='0,0,467,253'" width="467" height="253" />
+	          <VerticalLayout name = "prepareTestSpeed" bordersize="1" >
+	          	/*
+	            <HorizontalLayout bkcolor="#ffffffff" bkimage="file='tab_3_middle.png' dest='20,0,596,69'" height="69" inset="32,15,42">
+	              <Progress bkimage ="file='tab_3_progress_bg.png' corner='2,2,2,2'" foreimage="file='tab_3_progress_fore.png' corner='3,3,3,3'" height="10" min="0" max="100" value="30"/>
+	            </HorizontalLayout>
+	            */
+	            <HorizontalLayout inset="10,50">
+	              <Control />
+	              <Button name ="testSpeed" font="1" textcolor="#ffffffff" width="140" height="42" text="开始测速" normalimage="file='login_btn.png' source='0,0,94,32' corner='4,4,4,4'" hotimage="file='login_btn.png' source='94,0,188,32' corner='4,4,4,4'" />
+	              <Control />
+	            </HorizontalLayout>
+	          </VerticalLayout>
+	          <VerticalLayout name ="resultTestSpeed" visible="false" height="158" inset="30,5,29,0" bkimage="file='sesubg.png' dest='30,5,595,91'">
+	            <HorizontalLayout >
+	              <Label  width="283" height="44" text="下载速度" font="4" textcolor="#ffffffff" align="center" valign="cencer"/>
+	              <Label  width="283" height="44" text="上传速度" font="4" textcolor="#ffffffff" align="center" valign="cencer"/>
+	            </HorizontalLayout>
+	            <HorizontalLayout >
+	              <Label name="speedtest_dl" text="--- KB/s" font="3" textcolor="#ff3f8903" height="40" align="center" valign="cencer"/>
+	              <Label name="speedtest_up" text="--- KB/s" font="3" textcolor="#ff3f8903" height="40" align="center" valign="cencer"/>
+	            </HorizontalLayout>
+	            <HorizontalLayout inset="0,10,0,0">
+	              <Label name="speedtest_ip" text="" textcolor="#ff808080" align="center" valign="cencer"/>
+	              <Label text="宽带自助服务提速平台" align="center" textcolor="#ff808080" valign="cencer"/>
+	              <Label name="speedtest_loc" text="" align="center" textcolor="#ff808080" valign="cencer"/>
+	            </HorizontalLayout>
+	            <HorizontalLayout>
+	              <Control />
+	              <Button name="reTest" text="{u}再测一测{/u}" textcolor="#ff3f8903" font="4" showhtml="true" width="80"/>
+	            </HorizontalLayout>
+	          </VerticalLayout>
+	        </VerticalLayout>
+	        -->
+	      </HorizontalLayout>
+	      <HorizontalLayout name="tab_4_c" >
+	        <ActiveX name="union_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+	      </HorizontalLayout>
+	      <HorizontalLayout name="tab_5_c">
+	        <VerticalLayout name="dialpanel_login" inset="200,135,0,0" visible="true">
+	          <VerticalLayout childpadding="10" width="229">
+	            <Label text="宽带帐号登录:" font="4"/>
+	            <HorizontalLayout height="25">
+	            	<Label text="帐号:" width="40"/>
+		      			<Edit name="edt_dialname" bkimage="file='login_input.png' corner='1,1,1,1'"/>
+	            </HorizontalLayout>
+	            <HorizontalLayout height="25">
+	            	<Label text="密码:" width="40"/>
+		      			<RichEdit name="edt_dialpass" bkimage="file='login_input.png' corner='1,1,1,1'" password="true" readonly="false"/>
+	            </HorizontalLayout>
+	            <HorizontalLayout height="16">
+	              <CheckBox padding="40" text="记住密码" name="checkbox_password" width="90"  />
+	            </HorizontalLayout>
+	            <Button padding="40" width="94" height="32" name="btn_dialup" text="拨号" textcolor="#ffffffff" font="1" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	          </VerticalLayout>
+	        </VerticalLayout>
+	        <VerticalLayout name="dialpanel_disconnect" inset="0, 138" childpadding="20" visible="false">
+	          <Label align="center" text="您已经接入互联网" font="4"/>
+	          <Button padding="260" width="94" height="32" name="btn_hangup" text="断开" textcolor="#ffffffff" font="1" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	        </VerticalLayout>
+	        <VerticalLayout name="dialpanel_connecting" inset="0, 138" childpadding="20" visible="false">
+	          <Label name="lbl_conndesc" align="center" text="正在连接..." font="4"/>
+	          <Button padding="260" width="94" height="32" name="btn_hangup" text="断线" textcolor="#ffffffff" font="1" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	        </VerticalLayout>
+	        <VerticalLayout name="dialpanel_error" inset="0, 138" childpadding="20" visible="false">
+	          <Text name="txt_errmsg" align="center" text="" font="4"  height="80"/>
+	          <Button padding="260" width="94" height="32" name="btn_netcheck_go" text="宽带检测" textcolor="#ffffffff" font="1" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	          <Button padding="260" width="94" height="32" name="btn_redial" text="重新拨号" textcolor="#ffffffff" font="1" normalimage="file='login_btn.png' source='0,0,94,32'" hotimage="file='login_btn.png' source='94,0,188,32'" />
+	        </VerticalLayout>
+	      </HorizontalLayout>
+        <HorizontalLayout name="tab_6_c" >
+          <ActiveX name="read_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+        </HorizontalLayout>
+        <HorizontalLayout name="tab_7_c" visible="true" bkimage="file='js1.png'">
+          <ActiveX name="game_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+         </HorizontalLayout>
+	    </TabLayout>
+    
+		<Control bordercolor="#d6d6d6" bordersize="1" width="1" padding="0,4,0,4" />
+     <VerticalLayout name="rightframe" visible="true" width="198" bkcolor="#ffffffff" bordersize="0"  padding="0,4,0,4">
+    	<VerticalLayout name="adframe" visible="true" bkimage="file='广告背景.png'"  padding="4,4,4,4" height="300" >
+        <VerticalLayout visible="true" bkimage="file='广告背景.png'"  padding="0,0,0,0" height="100" >
+          <ActiveX name="ad_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+        </VerticalLayout>
+        <TabLayout name="switch2" bkcolor="#ffffffff" inset="0,1,0,1" bordercolor="#ff438b09" bordersize="0" padding="0,0,0,0">
+          <VerticalLayout name="ad" visible="true" bkimage="file='广告背景.png'" padding="0,0,0,0" height="200" >
+            <VerticalLayout visible="true" bkimage="file='广告背景.png'"  padding="0,10,0,0" height="100" >
+              <HorizontalLayout height="90" inset="10,10,10,0" childpadding="10">
+                <Option font="6" name="tab_read" group="1" selected="false" width="79" height="82" textcolor="#ffffffff" foreimage="file='阅读.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text=" 在线阅读" textpadding="0,50,0,0" />
+                <Option font="6" name="tab_user" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='tab_4.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text="用户反馈" textpadding="0,50,0,0" />
+              </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout visible="true" bkimage="file='广告背景.png'"  padding="0,0,0,0" height="100" >
+              <HorizontalLayout height="90" inset="10,0,10,4" childpadding="10">
+              </HorizontalLayout>
+            </VerticalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="cesu" visible="true" width="198" bkcolor="#ffffffff" bordersize="0"  padding="0,4,0,4">
+              <VerticalLayout visible="true" bkimage="file='广告背景.png'" padding="0,0,0,0" height="200" >
+                <VerticalLayout visible="true" bkimage="file='广告背景.png'"  padding="0,0,0,0" height="100" >
+                  <HorizontalLayout height="90" inset="10,10,10,0" childpadding="10">
+                    <Option font="6" name="tab_download" group="1" selected="false" width="79" height="82" textcolor="#ffffffff" foreimage="file='download.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text="下载测速" textpadding="0,50,0,0" />
+                    <Option font="6" name="tab_video" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='video.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text="视频测速" textpadding="0,50,0,0" />
+                  </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout visible="true" bkimage="file='广告背景.png'"  padding="0,0,0,0" height="100" >
+                  <HorizontalLayout height="90" inset="10,0,10,4" childpadding="10">
+                    <Option font="6" name="tab_website" group="1" selected="false" width="79" height="82" textcolor="#ffffffff" foreimage="file='website.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text="网页测速" textpadding="0,50,0,0" />
+                    <Option font="6" name="tab_multiple" group="1" width="79" height="82" textcolor="#ffffffff" foreimage="file='composite.png'" selectedimage="tab_select.png" hotimage="file='tab_select1.png'" text="综合测速" textpadding="0,50,0,0" />
+                  </HorizontalLayout>
+                </VerticalLayout>
+              </VerticalLayout>
+          </VerticalLayout>
+        </TabLayout>
+      </VerticalLayout>  	
+    	<Control bordercolor="#d6d6d6" bordersize="1" height="1" padding="0,0,0,0" />
+			<VerticalLayout visible="true" bkcolor="#ffffffff"  padding="4,4,4,4" height="140" >
+				<GifButton name="ad2" gif="def_ad2_1.jpg" bkimage="def_ad2_1.jpg"  width="190" height="140"  play="true" />
+    	</VerticalLayout>
+    </VerticalLayout>
+   </HorizontalLayout>
+    <HorizontalLayout height="20">
+      <Label name="version" width="80" text="版本：" textcolor="#ffffffff" font="8" padding="5,0,0,4"/>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
+
+
+<!-- {u}查阅提速体验须知{/}> -->

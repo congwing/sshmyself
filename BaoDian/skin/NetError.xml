@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="700*600" caption="0,0,0,38" roundcorner="4,4">
+  <Default name="Button" value="height=&quot;30&quot; width=&quot;84&quot; normalimage=&quot;file='button_white.png' source='0,0,8,32' corner='3,3,3,3'&quot; hotimage=&quot;file='button_white.png' source='8,0,16,32' corner='3,3,3,3'&quot; pushedimage=&quot;file='button_white.png' source='16,0,24,32' corner='3,3,3,3'&quot;" />
+  <Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+  <VerticalLayout bkimage="file='广告背景.png' corner='4,4,4,4'" hole="true">
+    <HorizontalLayout height="22">
+      <VerticalLayout width="149" bkimage="file='广告背景.png' dest='10,11,149,43'">
+      </VerticalLayout>
+      <HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout width="64" inset="0,1,0,0" >
+        <Button name="minbtn_Net" width="30" height="21"  normalimage="file='btn_min.png' source='0,0,30,21'" hotimage="file='btn_min.png' source='0,21,30,42'" pushedimage="file='btn_min.png' source='0,42,30,63'" />
+        <Button name="closebtn_Net" width="30" height="21" normalimage="file='btn_close.png' source='0,0,30,21'" hotimage="file='btn_close.png' source='0,21,30,42'" pushedimage="file='btn_close.png' source='0,42,30,63'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <VerticalLayout width="700" bkimage="file='广告背景.png'" inset="8,8,8,8">
+      <ActiveX name="neterror_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"></ActiveX>
+    </VerticalLayout>
+  </VerticalLayout>
+
+</Window>
+

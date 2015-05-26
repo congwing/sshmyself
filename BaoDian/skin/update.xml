@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="510*235" caption="0,0,0,38" roundcorner="4,4">
+  <Default name="Button" value="height=&quot;30&quot; width=&quot;84&quot; normalimage=&quot;file='button_white.png' source='0,0,8,32' corner='3,3,3,3'&quot; hotimage=&quot;file='button_white.png' source='8,0,16,32' corner='3,3,3,3'&quot; pushedimage=&quot;file='button_white.png' source='16,0,24,32' corner='3,3,3,3'&quot;" />
+  <Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+  <VerticalLayout bkimage="file='更新窗口.png' corner='1,38,1,1'" inset="1,1,1,1" bordersize="1" bordercolor="#ffcccccc">
+    <HorizontalLayout height="27">
+      <Label text="联通自助服务平台在线升级" textpadding="10" textcolor="#ffffffff" height="27"/>
+    </HorizontalLayout>
+    <TabLayout name="switch" selectedid="2">
+      <!--0-->
+      <VerticalLayout>
+        <Control />
+        <Label text="请稍等，联通自助服务平台正在为您检测软件是否有新版本。" align="center"/>
+        <Control />
+      </VerticalLayout>
+      <!--1-->
+      <VerticalLayout>
+        <Control />
+        <Label name="lblnewest" showhtml="true" text="您使用的“联通自助服务平台”软件已经是最新版本。" align="center"/>
+        <Button name="btnnewest" text="{f 7}{u}马上检测网速>>{/}{/}" showhtml="true"  align="center" textcolor="#ff0000cc" normalimage="" hotimage="" pushedimage="" width="510" />
+        <HorizontalLayout padding="0,34">
+          <Control />
+          <Button name="closebtn_nothing" text="关闭"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+      <!--2-->
+      <VerticalLayout childpadding="20">
+        <Control />
+        <Label name="lblwait" text="请等待" align="center"/>
+        <Progress name="progupdate" height="18" padding="40,0,40,0" bkimage ="file='tab_3_progress_bg.png' corner='2,2,2,2'" foreimage="file='tab_3_progress_fore.png' corner='3,3,3,3'" height="10" min="0" max="100" value="30"/>
+        <HorizontalLayout >
+          <Control />
+          <Button name="closebtn_updated" text="取消"/>
+          <Control />
+        </HorizontalLayout>
+        <Control />
+      </VerticalLayout>
+    </TabLayout>
+  </VerticalLayout>
+  
+</Window>

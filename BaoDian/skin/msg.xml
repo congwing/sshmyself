@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="302*232" caption="0,0,0,38" roundcorner="4,4">
+  <Default name="Button" value="height=&quot;30&quot; width=&quot;84&quot; normalimage=&quot;file='button_white.png' source='0,0,8,32' corner='3,3,3,3'&quot; hotimage=&quot;file='button_white.png' source='8,0,16,32' corner='3,3,3,3'&quot; pushedimage=&quot;file='button_white.png' source='16,0,24,32' corner='3,3,3,3'&quot;" />
+  <Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+  <VerticalLayout bkimage="file='消息.png' corner='1,38,1,1'" inset="1,1,1,1" bordersize="1" bordercolor="#ffcccccc">
+    <HorizontalLayout height="30" padding="270,0,0,0">
+      <Button name="closebtn" width="30" height="21" normalimage="file='btn_close.png' source='0,0,30,21'" hotimage="file='btn_close.png' source='0,21,30,42'" pushedimage="file='btn_close.png' source='0,42,30,63'"/>
+    </HorizontalLayout>
+    <HorizontalLayout>
+      <ActiveX name="msg_browser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" height="200" width="300" visible="true" delaycreate="false"></ActiveX>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
